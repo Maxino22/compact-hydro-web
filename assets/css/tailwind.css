@@ -6,6 +6,10 @@
 	@apply bg-primary text-lg text-white font-normal py-2 px-4 text-center hover:text-secondary uppercase;
 }
 
+.about-btn {
+	@apply py-1 lg:py-2 px-2 lg:px-4 text-sm md:text-lg text-white font-semibold border-2 border-secondary hover:bg-secondary;
+}
+
 .heading-1 {
 	@apply font-bold border-secondary border-l-8 pl-5 text-3xl uppercase text-black;
 }
