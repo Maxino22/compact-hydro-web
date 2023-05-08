@@ -1,0 +1,23 @@
+{
+	"name": "nuxt-app",
+	"private": true,
+	"scripts": {
+		"build": "nuxt build",
+		"dev": "nuxt dev",
+		"generate": "nuxt generate",
+		"preview": "nuxt preview",
+		"postinstall": "nuxt prepare",
+		"proxy": "mkcert -install && mkcert localhost && local-ssl-proxy --source 3010 --target 3000 --cert localhost.pem --key localhost-key.pem"
+	},
+	"devDependencies": {
+		"@nuxt/image-edge": "1.0.0-28050764.aaee7ac",
+		"@nuxtjs/tailwindcss": "^6.6.7",
+		"@types/node": "^18",
+		"nuxt": "^3.4.3",
+		"nuxt-icon": "^0.4.0",
+		"nuxt-seo-kit": "^1.3.8"
+	},
+	"dependencies": {
+		"@storyblok/nuxt": "^5.4.4"
+	}
+}

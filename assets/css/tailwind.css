@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+	@apply bg-primary text-lg text-white font-normal py-2 px-4 text-center hover:text-secondary uppercase;
+}
