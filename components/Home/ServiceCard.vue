@@ -1,12 +1,12 @@
 <template>
 	<nuxt-link
-		to=""
+		:to="service?.full_slug"
 		class="max-w-sm bg-white border border-gray-200 shadow group cursor-pointer"
 	>
 		<div class="relative overflow-hidden">
 			<nuxt-img
 				class="transition duration-300 ease-in-out group-hover:scale-110"
-				src="https://a.storyblok.com/f/228790/1024x768/4f880c4e7d/whatsapp-image-2022-07-06-at-9-17-31-pm.jpeg"
+				:src="service?.content.body[0].detail_columns[0].media.filename"
 				alt=""
 			/>
 			<div
@@ -15,8 +15,7 @@
 			<p
 				class="absolute hidden group-hover:block bottom-0 mb-3 font-normal text-white px-2"
 			>
-				Here are the biggest enterprise technology acquisitions of 2021 so far,
-				in reverse chronological order.
+				{{ service?.content.body[0].sub_text }}
 			</p>
 		</div>
 		<div class="p-5 group-hover:bg-primary">
@@ -24,13 +23,15 @@
 				<h5
 					class="mb-2 text-md group-hover:text-white font-bold tracking-tight text-gray-900"
 				>
-					Noteworthy technology acquisitions 2021
+					{{ service?.content.body[0].Title }}
 				</h5>
 			</nuxt-link>
 		</div>
 	</nuxt-link>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+defineProps({ service: Object })
+</script>
 
 <style scoped></style>

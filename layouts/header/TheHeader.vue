@@ -8,26 +8,26 @@
 				src="f/228790/582x630/b75b17df4e/compact-hydro-logo-file_vertical-for-white-bg.png"
 			></nuxt-img>
 		</nuxt-link>
-		<div class="lg:flex space-x-3 items-center hidden">
-			<p @mouseover="toggleServiceMenu" class="hover:text-secondary text-lg">
+		<div class="lg:flex space-x-7 items-center hidden">
+			<p @mouseover="toggleServiceMenu" class="hover:text-secondary text-md">
 				Services <span><Icon name="uil:angle-down" /></span>
 			</p>
 
 			<nuxt-link
 				@mouseover="ServicesDropdown = false"
-				class="hover:text-secondary text-lg"
+				class="hover:text-secondary text-md"
 				to="/about-us"
 				>About</nuxt-link
 			>
-			<nuxt-link class="hover:text-secondary text-lg" to="/reports"
+			<nuxt-link class="hover:text-secondary text-md" to="/reports"
 				>Reports</nuxt-link
 			>
-			<nuxt-link class="hover:text-secondary text-lg" to="/contact"
+			<nuxt-link class="hover:text-secondary text-md" to="/contact"
 				>Contact</nuxt-link
 			>
 		</div>
 		<div class="lg:flex space-x-3 items-center hidden">
-			<a class="hover:text-secondary text-lg" href="tel:254-750-440-044"
+			<a class="hover:text-secondary text-md" href="tel:254-750-440-044"
 				>+254 750 440 044</a
 			>
 			<nuxt-link to="/contact" class="btn"> Contact us </nuxt-link>
