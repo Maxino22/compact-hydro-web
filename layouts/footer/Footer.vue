@@ -50,7 +50,11 @@
 					class="flex flex-col space-y-4 divide-y divide-secondary w-1/2 text-white text-lg"
 				>
 					<nuxt-link class="hover:text-secondary" to="/">About</nuxt-link>
-					<a class="hover:text-secondary" href="#services">Services</a>
+
+					<nuxt-link to="/#services" class="hover:text-secondary"
+						>Services</nuxt-link
+					>
+
 					<nuxt-link class="hover:text-secondary" to="/reports"
 						>Reports</nuxt-link
 					>

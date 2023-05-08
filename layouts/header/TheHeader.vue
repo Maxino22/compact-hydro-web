@@ -2,10 +2,12 @@
 	<div
 		class="container mx-auto flex justify-between items-center bg-white py-4 px-4"
 	>
-		<nuxt-img
-			class="h-24"
-			src="f/228790/582x630/b75b17df4e/compact-hydro-logo-file_vertical-for-white-bg.png"
-		></nuxt-img>
+		<nuxt-link to="/">
+			<nuxt-img
+				class="h-20"
+				src="f/228790/582x630/b75b17df4e/compact-hydro-logo-file_vertical-for-white-bg.png"
+			></nuxt-img>
+		</nuxt-link>
 		<div class="lg:flex space-x-3 items-center hidden">
 			<p @mouseover="toggleServiceMenu" class="hover:text-secondary text-lg">
 				Services <span><Icon name="uil:angle-down" /></span>

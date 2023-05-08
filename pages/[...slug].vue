@@ -1,7 +1,7 @@
 <template>
 	<div>
-		<!-- <HomeHero /> -->
 		<StoryblokComponent v-if="story" :blok="story.content" />
+		<HomeAllServices />
 	</div>
 </template>
 

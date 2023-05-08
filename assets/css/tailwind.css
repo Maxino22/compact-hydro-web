@@ -5,3 +5,7 @@
 .btn {
 	@apply bg-primary text-lg text-white font-normal py-2 px-4 text-center hover:text-secondary uppercase;
 }
+
+.heading-1 {
+	@apply font-bold border-secondary border-l-8 pl-5 text-3xl uppercase text-black;
+}
