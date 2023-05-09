@@ -13,6 +13,9 @@ export default defineNuxtConfig({
 	extends: ['nuxt-seo-kit'],
 	app: {
 		head: {
+			htmlAttrs: {
+				class: 'scroll-smooth',
+			},
 			link: [
 				{ rel: 'icon', type: 'image/png', href: '/favicon.png' },
 				{ rel: 'preconnect', href: 'https://fonts.googleapis.com' },

@@ -1,6 +1,5 @@
 <template>
 	<div id="hero" class="relative" v-editable="blok">
-		<div class="absolute inset-0 bg-primary bg-opacity-20"></div>
 		<div
 			class="container mx-auto max-w-6xl flex flex-col space-y-8 items-center justify-center px-6 py-12 h-[600px] md:h-[800px]"
 		>
@@ -15,6 +14,7 @@
 			</div>
 			<nuxt-link class="btn" to="/#services"> VIEW OUR SERVICES</nuxt-link>
 		</div>
+		<!-- <div class="absolute inset-0 bg-primary bg-opacity-20"></div> -->
 	</div>
 </template>
 
