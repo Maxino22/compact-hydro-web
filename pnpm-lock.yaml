@@ -8,9 +8,11 @@ specifiers:
   nuxt: ^3.4.3
   nuxt-icon: ^0.4.0
   nuxt-seo-kit: ^1.3.8
+  vue3-carousel: ^0.3.1
 
 dependencies:
   '@storyblok/nuxt': 5.4.4
+  vue3-carousel: 0.3.1
 
 devDependencies:
   '@nuxt/image-edge': 1.0.0-28050764.aaee7ac
@@ -6209,6 +6211,12 @@ packages:
       '@vue/server-renderer': 3.2.47_vue@3.2.47
       '@vue/shared': 3.2.47
     dev: true
+
+  /vue3-carousel/0.3.1:
+    resolution: {integrity: sha512-86vUkNPBzL2PVuR9w6hUsI90ccFjLp+K8cSFpRTISf+SjUQY3fMHc5CFF5MUL62v1xYYm27zEBmQupO9VQx9Kw==}
+    peerDependencies:
+      vue: ^3.2.0
+    dev: false
 
   /wcwidth/1.0.1:
     resolution: {integrity: sha512-XHPEwS0q6TaxcvG85+8EYkbiCux2XtWG2mkc47Ng2A77BQu9+DqIOJldST4HgPkuea7dvKSj5VgX3P1d4rW8Tg==}

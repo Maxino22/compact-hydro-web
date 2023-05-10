@@ -1,5 +1,8 @@
 <template>
 	<div class="container max-w-6xl mx-auto my-6 py-4 px-3" v-editable="blok">
+		<h2 class="text-black text-center my-4 font-semibold text-3xl">
+			Compact <span class="text-secondary">Hydro</span> Shop
+		</h2>
 		<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 			<nuxt-img
 				class="object-cover h-60"
@@ -7,7 +10,6 @@
 				:src="blok?.image.filename"
 			></nuxt-img>
 			<div class="flex flex-col space-y-4">
-				<h2 class="text-black font-semibold text-3xl">{{ blok?.Title }}</h2>
 				<p class="text-md text-gray-800 font-normal">
 					{{ blok?.paragraph }}
 				</p>
@@ -19,15 +21,38 @@
 			</div>
 		</div>
 		<div
-			class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 place-items-center py-16"
+			class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 place-items-center py-16"
 		>
-			<HomeShopItem v-for="product in blok?.products" />
+			<HomeShopItem
+				v-for="product in products"
+				:key="product.id"
+				:item="product"
+			/>
 		</div>
 	</div>
+	<HomeTestimonials />
 </template>
 
 <script setup lang="ts">
+import ProductType from '~/Types/Product'
+
+const products = ref<ProductType[]>([])
 const props = defineProps({ blok: Object })
+const productArray = props.blok?.products[0].columns
+
+if (productArray) {
+	for (const product of productArray) {
+		const { _uid, url, Product_name, image } = product
+
+		const productData: ProductType = {
+			id: _uid,
+			url: url.url,
+			name: Product_name,
+			image: image.filename,
+		}
+		products.value.push(productData)
+	}
+}
 </script>
 
 <style scoped></style>

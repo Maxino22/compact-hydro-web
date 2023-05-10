@@ -55,8 +55,11 @@
 						>Services</nuxt-link
 					>
 
-					<nuxt-link class="hover:text-secondary" to="/reports"
-						>Reports</nuxt-link
+					<a
+						href="https://shop.compacthydro.co.ke/"
+						target="_blank"
+						class="hover:text-secondary"
+						>Shop</a
 					>
 					<nuxt-link class="hover:text-secondary" to="/reports"
 						>Contact</nuxt-link

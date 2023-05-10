@@ -9,7 +9,7 @@
 			></nuxt-img>
 		</nuxt-link>
 		<div class="lg:flex space-x-7 items-center hidden">
-			<p @mouseover="toggleServiceMenu" class="hover:text-secondary text-md">
+			<p @click="toggleServiceMenu" class="hover:text-secondary text-md">
 				Services <span><Icon name="uil:angle-down" /></span>
 			</p>
 
@@ -19,8 +19,12 @@
 				to="/about-us"
 				>About</nuxt-link
 			>
-			<nuxt-link class="hover:text-secondary text-md" to="/reports"
-				>Reports</nuxt-link
+			<a
+				@click="toggleMobileMenu"
+				href="https://shop.compacthydro.co.ke/"
+				target="_blank"
+				class="hover:text-secondary"
+				>Shop</a
 			>
 			<nuxt-link class="hover:text-secondary text-md" to="/contact"
 				>Contact</nuxt-link

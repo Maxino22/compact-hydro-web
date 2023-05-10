@@ -8,15 +8,35 @@
 				<span>Services</span> <span><Icon name="uil:angle-down" /></span
 			></a>
 
-			<nuxt-link class="hover:text-secondary" to="/about-us">About</nuxt-link>
-			<nuxt-link class="hover:text-secondary" to="/reports">Reports</nuxt-link>
-			<nuxt-link class="hover:text-secondary" to="/contact">Contact</nuxt-link>
+			<nuxt-link
+				@click="toggleMobileMenu"
+				class="hover:text-secondary"
+				to="/about-us"
+				>About</nuxt-link
+			>
+			<a
+				@click="toggleMobileMenu"
+				href="https://shop.compacthydro.co.ke/"
+				target="_blank"
+				class="hover:text-secondary"
+				>Shop</a
+			>
+			<nuxt-link
+				@click="toggleMobileMenu"
+				class="hover:text-secondary"
+				to="/contact"
+				>Contact</nuxt-link
+			>
 		</div>
 	</transition>
 </template>
 
 <script setup lang="ts">
 const mobileMenu = useState('mobileMenu')
+
+const toggleMobileMenu = () => {
+	mobileMenu.value = !mobileMenu.value
+}
 </script>
 
 <style>
