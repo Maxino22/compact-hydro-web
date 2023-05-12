@@ -1,5 +1,5 @@
 <template>
-	<div class="bg-primary py-16 px-10 md:px-0">
+	<div id="footer" class="bg-primary py-16 px-10 md:px-0">
 		<div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
 			<div class="flex flex-col space-y-4">
 				<nuxt-link to="/">
@@ -109,6 +109,10 @@
 	</div>
 </template>
 
-<script setup lang="ts"></script>
-
-<style scoped></style>
+<style scoped>
+/* #footer {
+	background-image: url('https://a.storyblok.com/f/228790/1280x850/293b7cfdd6/footer.jpg/m/');
+	background-repeat: no-repeat;
+	background-size: contain;
+} */
+</style>
