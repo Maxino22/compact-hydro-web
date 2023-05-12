@@ -1,5 +1,5 @@
 <template>
-	<div class="bg-sky-800 py-16 px-10 md:px-0">
+	<div class="bg-primary py-16 px-10 md:px-0">
 		<div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
 			<div class="flex flex-col space-y-4">
 				<nuxt-link to="/">

@@ -10,10 +10,14 @@
 				<div class="flex flex-col space-y-2">
 					<h2 class="font-semibold text-primary">Water & Storage Solutions</h2>
 					<div class="flex flex-col space-y-3">
-						<nuxt-link to="/services/storage-solutions"
+						<nuxt-link
+							class="hover:text-secondary"
+							to="/services/storage-solutions"
 							>Storage Solutions</nuxt-link
 						>
-						<nuxt-link to="/services/water-purification"
+						<nuxt-link
+							class="hover:text-secondary"
+							to="/services/water-purification"
 							>Water Purification</nuxt-link
 						>
 					</div>
@@ -23,16 +27,27 @@
 						Borehole & Drilling Solutions
 					</h2>
 					<div class="flex flex-col space-y-3">
-						<nuxt-link to="/services/borehole-drilling"
+						<nuxt-link
+							class="hover:text-secondary"
+							to="/services/borehole-drilling"
 							>Borehole Drilling</nuxt-link
 						>
-						<nuxt-link to="/services/borehole-test-pump"
-							>Borehole Test Pump</nuxt-link
+						<nuxt-link
+							class="hover:text-secondary"
+							to="/services/borehole-geophysical-survey"
+							>Survey</nuxt-link
 						>
-						<nuxt-link to="/services/pump-installation"
+						<nuxt-link
+							class="hover:text-secondary"
+							to="/services/pump-installation"
 							>Pump Installation</nuxt-link
 						>
-						<nuxt-link to="/services/borehole-maintainance"
+						<nuxt-link class="hover:text-secondary" to="/services/test-pumping"
+							>Pump Installation</nuxt-link
+						>
+						<nuxt-link
+							class="hover:text-secondary"
+							to="/services/borehole-maintainance"
 							>Borehole Maintainance</nuxt-link
 						>
 					</div>
@@ -41,31 +56,37 @@
 					<h2 class="font-semibold text-primary">Compact Hydro Shop</h2>
 					<div class="flex flex-col space-y-3">
 						<a
+							class="hover:text-secondary"
 							href="https://shop.compacthydro.co.ke/product-category/borehole-equipment/"
 							target="_blank"
 							>Borehole Equipment</a
 						>
 						<a
+							class="hover:text-secondary"
 							href="https://shop.compacthydro.co.ke/product-category/solar-products/"
 							target="_blank"
 							>Solar Products</a
 						>
 						<a
+							class="hover:text-secondary"
 							href="https://shop.compacthydro.co.ke/product-category/storage-solutions/"
 							target="_blank"
 							>Storage Solutions</a
 						>
 						<a
+							class="hover:text-secondary"
 							href="https://shop.compacthydro.co.ke/product-category/irrigation-equipment/"
 							target="_blank"
 							>Irrigation Equipment</a
 						>
 						<a
+							class="hover:text-secondary"
 							href="https://shop.compacthydro.co.ke/product-category/water-pumps/"
 							target="_blank"
 							>Water Pumps</a
 						>
 						<a
+							class="hover:text-secondary"
 							href="https://shop.compacthydro.co.ke/product-category/water-treatment/"
 							target="_blank"
 							>Water Treatment</a
@@ -76,6 +97,14 @@
 					<h2 class="font-semibold text-primary">
 						Consolutancy & Project Maintainance
 					</h2>
+					<nuxt-link
+						class="hover:text-secondary"
+						to="/services/borehole-maintainance"
+						>Borehole Maintainance & Rehabilitation</nuxt-link
+					>
+					<nuxt-link class="hover:text-secondary" to="/contact"
+						>Talk to us</nuxt-link
+					>
 				</div>
 			</div>
 		</div>

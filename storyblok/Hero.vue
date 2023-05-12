@@ -12,9 +12,9 @@
 					{{ blok?.sub_title }}
 				</p>
 			</div>
-			<nuxt-link class="btn" to="/#services"> VIEW OUR SERVICES</nuxt-link>
+			<nuxt-link class="btn z-20" to="/#services"> VIEW OUR SERVICES</nuxt-link>
 		</div>
-		<!-- <div class="absolute inset-0 bg-primary bg-opacity-20"></div> -->
+		<div class="absolute inset-0 bg-primary bg-opacity-20"></div>
 	</div>
 </template>
 
