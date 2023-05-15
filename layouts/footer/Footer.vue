@@ -61,7 +61,7 @@
 						class="hover:text-secondary"
 						>Shop</a
 					>
-					<nuxt-link class="hover:text-secondary" to="/reports"
+					<nuxt-link class="hover:text-secondary" to="/contact"
 						>Contact</nuxt-link
 					>
 					<div></div>
