@@ -22,6 +22,20 @@ const props = defineProps({ blok: Object })
 const detail_flat = props.blok?.detail_columns[0]
 const detail_reverse = props.blok?.detail_columns[1]
 const detail_paragraph = props.blok?.detail_columns[2]
+const { slug } = useRoute().params
+const slugString = `${slug[0]}/${slug[1]}`
+
+useSeoMeta({
+	title: props.blok?.Title,
+	description: props.blok?.sub_text,
+	ogUrl: `https://compacthydro.co.ke/${slugString}`,
+	ogTitle: props.blok?.title,
+	ogImage: detail_flat.media.filename,
+	twitterCard: 'summary_large_image',
+	twitterTitle: props.blok?.Title,
+	twitterDescription: props.blok?.sub_text,
+	twitterImage: detail_flat.media.filename,
+})
 </script>
 
 <style scoped></style>

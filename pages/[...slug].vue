@@ -9,13 +9,17 @@ const { slug } = useRoute().params
 
 const resolveRelations = ['all-services.services']
 
-const story = await useAsyncStoryblok(
-	Array.isArray(slug) && slug.length > 0 ? slug.join('/') : 'home',
-	{ version: 'published', resolve_relations: resolveRelations },
-	{
-		resolveRelations,
-	}
-)
+let story: any = null
+
+try {
+	story = await useAsyncStoryblok(
+		Array.isArray(slug) && slug.length > 0 ? slug.join('/') : 'home',
+		{ version: 'published', resolve_relations: resolveRelations },
+		{
+			resolveRelations,
+		}
+	)
+} catch (error) {}
 </script>
 
 <style scoped></style>
