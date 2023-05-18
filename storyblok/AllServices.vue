@@ -6,7 +6,7 @@
 				class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 items-center my-5 px-5"
 			>
 				<HomeServiceCard
-					v-for="service in services"
+					v-for="service in serviceState"
 					:key="service.id"
 					:service="service"
 				/>
@@ -19,6 +19,7 @@
 const props = defineProps({ blok: Object })
 import ServiceType from '../Types/Service'
 
+const serviceState = useState('services', () => [] as ServiceType[])
 const services = ref<ServiceType[]>([])
 
 const servicesArray = props.blok?.services
@@ -35,6 +36,7 @@ if (servicesArray) {
 		}
 
 		services.value.push(serviceData)
+		serviceState.value.push(serviceData)
 	}
 }
 </script>

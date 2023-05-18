@@ -4,8 +4,9 @@
 	>
 		<nuxt-link to="/">
 			<nuxt-img
-				class="h-20"
-				src="f/228790/582x630/b75b17df4e/compact-hydro-logo-file_vertical-for-white-bg.png"
+				format="webp"
+				class="h-14 md:h-14"
+				src="f/228790/942x326/8ff80e42bf/compact-hydro-logo-file_horizontal-2-for-light-bg.png"
 			></nuxt-img>
 		</nuxt-link>
 		<div class="lg:flex space-x-7 items-center hidden">

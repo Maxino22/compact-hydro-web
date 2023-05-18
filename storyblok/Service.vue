@@ -1,6 +1,6 @@
 <template>
 	<div v-editable="blok">
-		<section class="w-full bg-primary py-16 mb-6">
+		<section id="hero" class="w-full bg-primary py-16 mb-6">
 			<div class="flex flex-col justify-center items-center text-white">
 				<h6 class="text-md text-secondary uppercase font-bold">Service</h6>
 				<h1 class="font-semibold text-4xl md:text-6xl uppercase">
@@ -11,9 +11,31 @@
 				</p>
 			</div>
 		</section>
-		<ServicesDetailFlat :details="detail_flat" />
-		<ServicesDetailReverse v-if="detail_reverse" :details="detail_reverse" />
-		<ServicesDetailParagraph v-if="detail_flat" :details="detail_paragraph" />
+		<div class="container mx-auto max-w-7xl py-16 px-10 md:px-0 space-y-8">
+			<ServicesDetailFlat :details="detail_flat" />
+			<ServicesDetailReverse v-if="detail_reverse" :details="detail_reverse" />
+			<ServicesDetailParagraph v-if="detail_flat" :details="detail_paragraph" />
+			<div
+				class="p-6 border border-gray-600 flex flex-row justify-between items-center"
+			>
+				<p class="font-medium text-2xl">
+					Contact us for {{ blok?.Title }} Services
+				</p>
+				<nuxt-link to="/contacts" class="py-2 px-4 bg-primary text-white">
+					Contact Us
+				</nuxt-link>
+			</div>
+			<h1 class="heading-1">Other Services</h1>
+			<div
+				class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 items-center my-5 px-5"
+			>
+				<HomeServiceCard
+					v-for="(service, index) in services.slice(0, 3)"
+					:key="service.id"
+					:service="service"
+				/>
+			</div>
+		</div>
 	</div>
 </template>
 
@@ -24,6 +46,10 @@ const detail_reverse = props.blok?.detail_columns[1]
 const detail_paragraph = props.blok?.detail_columns[2]
 const { slug } = useRoute().params
 const slugString = `${slug[0]}/${slug[1]}`
+
+import ServiceType from '../Types/Service'
+
+const services = useState('services', () => [] as ServiceType[])
 
 useSeoMeta({
 	title: props.blok?.Title,

@@ -19,7 +19,10 @@ try {
 			resolveRelations,
 		}
 	)
-} catch (error) {}
+} catch (error) {
+	console.log(error);
+	
+}
 </script>
 
 <style scoped></style>
