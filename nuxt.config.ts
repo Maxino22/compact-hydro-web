@@ -15,13 +15,11 @@ export default defineNuxtConfig({
 	chatwoot: {
 		init: {
 			websiteToken: '5YYTo9HmMxCvXFdtnu8yv34p',
-			baseUrl: 'https://app.chatwoot.com',
 		},
 		settings: {
 			locale: 'en',
 			position: 'right',
 			launcherTitle: 'Talk to Us',
-
 			// ... and more settings
 		},
 		// If this is loaded you can make it true, https://github.com/nuxt-modules/partytown
