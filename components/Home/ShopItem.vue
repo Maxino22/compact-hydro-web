@@ -1,11 +1,27 @@
 <template>
-	<a class="flex flex-col items-center space-y-3" :href="item.url">
-		<nuxt-img
-			format="webp"
-			class="h-32 object-contain"
-			:src="item.image"
-		></nuxt-img>
-		<p class="text-secondary text-md">{{ item.name }}</p>
+	<a
+		target="_blank"
+		:href="item.url"
+		class="max-w-sm bg-white border border-gray-200 shadow group cursor-pointer"
+	>
+		<div class="relative overflow-hidden">
+			<nuxt-img
+				format="webp"
+				class="transition duration-300 ease-in-out group-hover:scale-110 h-72"
+				:src="item.image"
+				alt=""
+			/>
+			<div
+				class="absolute inset-0 group-hover:bg-black group-hover:bg-opacity-40"
+			></div>
+		</div>
+		<div class="p-5 group-hover:bg-primary">
+			<h5
+				class="mb-2 text-md group-hover:text-white font-bold tracking-tight text-gray-900"
+			>
+				{{ item.name }}
+			</h5>
+		</div>
 	</a>
 </template>
 

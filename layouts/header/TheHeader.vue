@@ -1,6 +1,6 @@
 <template>
 	<div
-		class="container mx-auto flex justify-between items-center bg-white py-4 px-4"
+		class="container sticky shadow-sm z-50 top-0 mx-auto flex justify-between items-center bg-white py-4 px-4"
 	>
 		<nuxt-link to="/">
 			<nuxt-img
