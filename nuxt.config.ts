@@ -5,27 +5,12 @@ export default defineNuxtConfig({
 		'@nuxt/image-edge',
 		['@storyblok/nuxt', { accessToken: process.env.STORYBLOK_TOKEN }],
 		'nuxt-icon',
-		'@productdevbook/chatwoot',
 	],
 
 	image: {
 		provider: 'storyblok',
 		baseURL: 'https://a.storyblok.com/',
 	},
-	chatwoot: {
-		init: {
-			websiteToken: '5YYTo9HmMxCvXFdtnu8yv34p',
-		},
-		settings: {
-			locale: 'en',
-			position: 'right',
-			launcherTitle: 'Talk to Us',
-			// ... and more settings
-		},
-		// If this is loaded you can make it true, https://github.com/nuxt-modules/partytown
-		partytown: false,
-	},
-
 	extends: ['nuxt-seo-kit'],
 	app: {
 		head: {
