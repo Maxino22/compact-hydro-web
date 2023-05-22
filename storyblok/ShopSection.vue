@@ -3,7 +3,7 @@
 		<h2 class="text-black text-center my-4 font-semibold text-3xl">
 			Compact <span class="text-secondary">Hydro</span> Shop
 		</h2>
-		<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+		<div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center px-5">
 			<nuxt-img
 				class="object-cover h-60"
 				format="webp"

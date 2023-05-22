@@ -1,5 +1,5 @@
 <template>
-	<form class="w-full" @submit="handleSubmit">
+	<form class="w-full px-3" @submit="handleSubmit">
 		<p class="text-black text-md my-3">
 			We are soo happy to hear about your project leave us a message and one of
 			us will get back to you.
