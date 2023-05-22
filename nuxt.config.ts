@@ -14,7 +14,7 @@ export default defineNuxtConfig({
 	},
 	chatwoot: {
 		init: {
-			websiteToken: 'b6BejyTTuxF4yPt61ZTZHjdB',
+			websiteToken: '5YYTo9HmMxCvXFdtnu8yv34p',
 			baseUrl: 'https://app.chatwoot.com',
 		},
 		settings: {

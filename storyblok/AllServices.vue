@@ -6,7 +6,7 @@
 				class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 items-center my-5 px-5"
 			>
 				<HomeServiceCard
-					v-for="service in serviceState"
+					v-for="service in services"
 					:key="service.id"
 					:service="service"
 				/>
