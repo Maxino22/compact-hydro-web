@@ -1,5 +1,5 @@
 <template>
-	<div class="bg-white">
+	<div class="bg-white mb-8">
 		<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 			<video
 				v-if="isVideo"

@@ -2,7 +2,7 @@
 	<transition name="drop">
 		<div
 			@mouseleave="toggleServiceMenu"
-			class="z-40 absolute top-20 left-0 w-full border-t border-gray-100 shadow-sm h-[500px] py-4 bg-white"
+			class="z-40 sticky top-20 left-0 w-full border-t border-gray-100 shadow-sm h-[500px] py-4 bg-white"
 		>
 			<div
 				class="hidden lg:grid grid-cols-4 gap-4 text-black container mx-auto"

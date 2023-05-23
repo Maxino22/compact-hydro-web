@@ -1,5 +1,5 @@
 <template>
-	<div class="bg-white">
+	<div class="bg-white my-5">
 		<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 			<div class="flex flex-col space-y-3">
 				<h1 class="heading-1">{{ details?.Title }}</h1>

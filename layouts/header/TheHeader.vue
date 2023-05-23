@@ -2,7 +2,7 @@
 	<div
 		class="container sticky shadow-sm z-50 top-0 mx-auto flex justify-between items-center bg-white py-4 px-4"
 	>
-		<nuxt-link to="/">
+		<nuxt-link @click="MobileMenu = false" to="/">
 			<nuxt-img
 				format="webp"
 				class="h-14 md:h-14"

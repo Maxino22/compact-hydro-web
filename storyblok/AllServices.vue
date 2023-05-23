@@ -36,7 +36,8 @@ if (servicesArray) {
 		}
 
 		services.value.push(serviceData)
-		serviceState.value.push(serviceData)
 	}
 }
+
+serviceState.value = services.value
 </script>

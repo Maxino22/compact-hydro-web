@@ -1,6 +1,6 @@
 <template>
 	<nuxt-link
-		:to="service.slug"
+		:to="'/' + service.slug"
 		class="max-w-sm bg-white border border-gray-200 shadow group cursor-pointer"
 	>
 		<div class="relative overflow-hidden">

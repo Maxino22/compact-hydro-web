@@ -11,21 +11,24 @@
 				</p>
 			</div>
 		</section>
-		<div class="container mx-auto max-w-7xl py-16 px-10 md:px-0 space-y-8">
+		<div class="container mx-auto max-w-7xl py-16 px-10 md:px-0">
 			<ServicesDetailFlat :details="detail_flat" />
 			<ServicesDetailReverse v-if="detail_reverse" :details="detail_reverse" />
 			<ServicesDetailParagraph v-if="detail_flat" :details="detail_paragraph" />
 			<div
-				class="p-6 border border-gray-600 flex flex-row justify-between items-center"
+				class="my-5 py-3 px-2 border border-gray-600 flex flex-row justify-between items-center"
 			>
-				<p class="font-medium text-2xl">
+				<p class="font-medium text-lg md:text-2xl">
 					Contact us for {{ blok?.Title }} Services
 				</p>
-				<nuxt-link to="/contacts" class="py-2 px-4 bg-primary text-white">
-					Contact Us
+				<nuxt-link
+					to="/contacts"
+					class="py-2 rounded-md px-6 bg-primary text-sm md:text-md text-white"
+				>
+					Contact
 				</nuxt-link>
 			</div>
-			<h1 class="heading-1">Other Services</h1>
+			<h1 class="heading-1 my-5">Other Services</h1>
 			<div
 				class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 items-center my-5 px-5"
 			>

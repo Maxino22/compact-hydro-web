@@ -2,7 +2,7 @@
 	<transition name="drop">
 		<div
 			v-if="mobileMenu"
-			class="z-40 absolute top-28 w-full flex flex-col lg:hidden space-y-3 text-white text-md py-4 px-3 bg-gray-700"
+			class="z-40 sticky top-28 w-full flex flex-col lg:hidden space-y-3 text-white text-md py-4 px-3 bg-gray-700"
 		>
 			<p
 				@click="toggleService"
